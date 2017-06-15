@@ -31,7 +31,7 @@ public class ListUserOrderActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Object o = lv1.getItemAtPosition(position);
                 UserOrder newsData = (UserOrder) o;
-                Toast.makeText(ListUserOrderActivity.this, "Selected :" + " " + newsData, Toast.LENGTH_LONG).show();
+               // Toast.makeText(ListUserOrderActivity.this, "Selected :" + " " + newsData, Toast.LENGTH_LONG).show();
             }
             });
 
