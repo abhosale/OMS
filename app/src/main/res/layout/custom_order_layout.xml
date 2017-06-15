@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/product"
+        android:layout_toStartOf="@+id/rate" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginEnd="11dp"
+        android:layout_alignBaseline="@+id/qty"
+        android:layout_alignBottom="@+id/qty"
+        android:layout_toStartOf="@+id/total" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/rate"
+        android:layout_alignBottom="@+id/rate"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/srep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/qty"
+        android:layout_alignBottom="@+id/qty"
+        android:layout_alignStart="@+id/product"
+        android:layout_toStartOf="@+id/qty" />
+</RelativeLayout>
