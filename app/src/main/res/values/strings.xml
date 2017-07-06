@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">OMS</string>
+    <string name="app_name">iBaaZar</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_list_user_order">User Order</string>
+    <string name="title_activity_product_list">product_list</string>
+    <string name="image">Thumbnail</string>
+    <string name="title_activity_product_list_item">product_list_item</string>
+    <string name="title_activity_product_master">product_master</string>
+    <string name="title_activity_product_images">Product Images</string>
+    <string name="title_activity_user_product_list">user_product_list</string>
 </resources>

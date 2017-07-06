@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inuk.dabz.oms.user_product_list"
+    android:orientation="vertical"
+
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right">
+
+            <EditText
+                android:id="@+id/et_user_product_search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:background="@drawable/login_edittext"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:hint="search product here"
+
+                android:gravity="center" >
+            </EditText>
+
+        </LinearLayout>
+    <ListView
+        android:id="@+id/lv_user_product_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        >
+    </ListView>
+</LinearLayout>

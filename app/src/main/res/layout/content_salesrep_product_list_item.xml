@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iconProduct"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:contentDescription="@string/image"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <RelativeLayout
+        android:id="@+id/layoutProductDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iconProduct"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.80"
+        >
+    <LinearLayout
+        android:id="@+id/layoutProductDetailsTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        >
+    <TextView
+        android:id="@+id/titleProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="3dp"
+        android:text="Amala Candi - 100 gms"
+        android:textColor="#117864"
+        android:gravity="left"
+        android:layout_weight="0.60"
+        android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/rateProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/titleProduct"
+            android:text="Rs.10/Pc"
+            android:textColor="#3399FF"
+            android:paddingLeft="5dp"
+            android:layout_weight="0.40"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutProductDetailsTop"
+        android:paddingLeft="3dp"
+        android:paddingTop="2dp"
+        android:text="This is Product Name"
+        android:textColor="#3399FF"
+        android:textSize="14dp" />
+
+
+    </RelativeLayout>
+
+<ImageView
+    android:id="@+id/availabilityProduct"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.20"
+    android:src="@mipmap/ic_check_mark"
+    android:layout_gravity="center_vertical"
+    />
+
+</LinearLayout>
+

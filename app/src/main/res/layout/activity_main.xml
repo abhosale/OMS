@@ -1,68 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.inuk.dabz.oms.MainActivity">
-
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="?attr/colorPrimary"
-        app:popupTheme="@style/AppTheme.PopupOverlay"
-        app:layout_constraintRight_toLeftOf="@+id/appBarLayout2"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginTop="8dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/appBarLayout"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <include
-        layout="@layout/content_main"
-        android:id="@+id/include2"
-        android:layout_height="0dp"
-        android:layout_width="0dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout3"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_dialog_email"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="16dp" />
+    android:orientation="vertical"
+    tools:context="com.inuk.dabz.oms.user_product_list">
 
     <Button
         android:id="@+id/userbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="User Order"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="113dp" />
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="User Login"
+        />
+    <Button
+        android:id="@+id/salesrepbtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Sales Rep Login"
+        />
 
     <Button
         android:id="@+id/vendorbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
-        android:text="Vendor"
-        app:layout_constraintTop_toBottomOf="@+id/userbtn"
-        tools:layout_editor_absoluteX="38dp" />
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Vendor Rep Login"
+        />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_icon_product"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:contentDescription="@string/image"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <RelativeLayout
+        android:id="@+id/layoutProductDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/img_icon_product"
+        android:layout_weight="0.80">
+
+        <LinearLayout
+            android:id="@+id/layoutProductDetailsTop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_title_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="3dp"
+                android:text="Amala Candi - 100 gms"
+                android:textColor="#117864"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_rate_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_title_product"
+                android:layout_weight="0.40"
+                android:paddingLeft="5dp"
+                android:text="Rs.10/Pc"
+                android:textColor="#3399FF"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_desc_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutProductDetailsTop"
+            android:paddingLeft="3dp"
+            android:paddingTop="2dp"
+            android:text="This is Product description where this is a product name which can be used"            android:textColor="#3399FF"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+<!--    <ImageView
+        android:id="@+id/img_cart_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_cart"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        />-->
+
+</LinearLayout>

@@ -28,7 +28,29 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.inuk.dabz.oms.MainActivity" />
         </activity>
-        <activity android:name=".AddUserOrderActivity"></activity>
+        <activity android:name=".AddUserOrderActivity" />
+        <activity
+            android:name=".salesrep_product_list"
+            android:label="@string/title_activity_product_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".product_row_item" />
+        <activity
+            android:name=".product_list_item"
+            android:label="@string/title_activity_product_list_item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".product_master"
+            android:label="@string/title_activity_product_master"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".product_images"
+            android:label="@string/title_activity_product_images"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".user_product_list_item" />
+        <activity android:name=".user_product_list" />
+        <activity android:name=".user_product_buy" />
+        <activity android:name=".test_badge_layout" />
+        <activity android:name=".user_cart"></activity>
     </application>
 
 </manifest>
