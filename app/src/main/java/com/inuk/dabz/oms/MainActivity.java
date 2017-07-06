@@ -14,6 +14,9 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnUserActivity;
+    private Button btnSalesRepActivity;
+    private Button btnVendorActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,23 +24,25 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-
         btnUserActivity = (Button) findViewById(R.id.userbtn);
+        btnSalesRepActivity = (Button) findViewById(R.id.salesrepbtn);
+        btnVendorActivity = (Button) findViewById(R.id.vendorbtn);
 
         btnUserActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                launchActivity();
+                Intent intent = new Intent(view.getContext(), user_product_list.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSalesRepActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), salesrep_product_list.class);
+                startActivity(intent);
+
             }
         });
     }
@@ -45,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void launchActivity() {
 
-        Intent intent = new Intent(this, ListUserOrderActivity.class);
+        //Intent intent = new Intent(this, ListUserOrderActivity.class);
+        Intent intent = new Intent(this, user_product_list.class);
         startActivity(intent);
     }
     @Override
